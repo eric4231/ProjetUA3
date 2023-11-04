@@ -1,0 +1,136 @@
+/* Styles de base */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* En-tête et navigation */
+header {
+    background-color: #99ccff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px; /* Taille d'exemple */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px; /* Ajouter du padding pour une meilleure zone de clic */
+    display: inline-block; /* Permet le padding et les effets de survol */
+    transition: background-color 0.3s; /* Transition douce pour l'effet de survol */
+}
+/* Styles de survol et actifs pour les liens de navigation */
+nav a:hover {
+    background-color: #9999ff; /* Bleu plus clair au survol */
+}
+
+nav a:active {
+    background-color: #6666ff; /* Bleu légèrement plus foncé pour l'état actif/cliqué */
+    border-style: inset; /* Donne l'impression d'être enfoncé */
+}
+
+/* Styles du contenu principal */
+main {
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Changer la couleur du texte en blanc pour le contraste */
+}
+
+main h1 {
+    font-family: 'neuton', serif;
+    font-size: 3rem; /* Ajuster la taille selon le besoin */
+    color: #005a5a;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Ajoute de l'espace en dessous du h1 */
+}
+
+main p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem; /* Ajuster la taille selon le besoin */
+    margin-top: 1rem; /* Ajoute de l'espace au-dessus du paragraphe */
+    color: #005a5a; /* Couleur bleue claire pour le texte */
+}
+
+main img {
+    max-width: 100%; /* Rend l'image responsive */
+    height: auto; /* Maintient le ratio d'aspect */
+    margin: 1rem 0; /* Ajoute de l'espace au-dessus et en dessous de l'image */
+}
+/*Style pour le menu*/
+.titre_menu{
+    font-size: 9em;
+    text-align: center;
+    padding: 0.4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0;
+}
+
+.table_menu{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+    padding-bottom: 6em;
+}
+
+.section_menu{
+    text-align: center;
+    font-size: 3em;
+}
+
+.option_menu{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    padding-left: 9%;
+}
+
+.description_menu{
+    padding-left: 10%;
+    font-family:'Segoe UI', sans-serif;
+}
+
+.prix_menu {
+    text-align: right;
+    padding-right: 10%; 
+    color: #000; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+
