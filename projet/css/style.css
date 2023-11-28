@@ -1,0 +1,346 @@
+
+/* Styles de base */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* En-tête et navigation */
+header {
+    background-color: #99ccff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px; /* Taille d'exemple */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px; /* Ajouter du padding pour une meilleure zone de clic */
+    display: inline-block; /* Permet le padding et les effets de survol */
+    transition: background-color 0.3s; /* Transition douce pour l'effet de survol */
+}
+/* Styles de survol et actifs pour les liens de navigation */
+nav a:hover {
+    background-color: #9999ff; /* Bleu plus clair au survol */
+}
+
+nav a:active {
+    background-color: #6666ff; /* Bleu légèrement plus foncé pour l'état actif/cliqué */
+    border-style: inset; /* Donne l'impression d'être enfoncé */
+}
+
+/* Styles du contenu principal */
+main {
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Changer la couleur du texte en blanc pour le contraste */
+}
+
+main h1 {
+    font-family: 'neuton', serif;
+    font-size: 3rem; /* Ajuster la taille selon le besoin */
+    color: #005a5a;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Ajoute de l'espace en dessous du h1 */
+}
+
+main p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem; /* Ajuster la taille selon le besoin */
+    margin-top: 1rem; /* Ajoute de l'espace au-dessus du paragraphe */
+    color: #005a5a; /* Couleur bleue claire pour le texte */
+}
+
+main img {
+    max-width: 100%; /* Rend l'image responsive */
+    height: auto; /* Maintient le ratio d'aspect */
+    margin: 1rem 0; /* Ajoute de l'espace au-dessus et en dessous de l'image */
+}
+/*Style pour le menu*/
+.titre_menu{
+    font-size: 9em;
+    text-align: center;
+    padding: 0.4em;
+    margin-bottom: 0;
+}
+
+.img_menu{
+    background-color: #333;
+    max-width: 40%;
+    padding: 1em;
+}
+
+.table_menu{
+    width: 80%;
+    background-color: #f0f0f0;
+    padding-bottom: 6em;
+}
+
+.section_menu{
+    padding: auto;
+    font-size: 3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.option_menu{
+    font-family:'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    padding-left: 0;
+}
+
+.description_menu{
+    padding-left: 0%;
+    font-family:'Segoe UI', sans-serif;
+    padding-bottom: 1.5em;
+}
+
+.prix_menu {
+    text-align: right;
+    padding-right: 0%; 
+    color: #000; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+/* STYLE SPÉCIAL */
+
+.img_special{
+    max-width: 30%;
+    max-height: auto;
+    border: #005a5a solid 2px ;
+}
+
+.sous_titre_special{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.75rem; 
+    margin-top: 1rem; 
+    color: black; 
+}
+
+/*inscription*/
+.inscription>div{
+    margin-bottom: 20px;
+}
+
+.label_ins{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem; /* Ajuster la taille selon le besoin */
+    margin-top: 1rem; /* Ajoute de l'espace au-dessus du paragraphe */
+    color: #005a5a; /* Couleur bleue claire pour le texte */
+}
+
+.input_ins{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem; /* Ajuster la taille selon le besoin */
+    margin-top: 1rem; /* Ajoute de l'espace au-dessus du paragraphe */
+    color: #005a5a; /* Couleur bleue claire pour le texte */
+    width: 20em;
+}
+
+
+/* Footer */
+.division{
+    padding-bottom: 34rem;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5em;
+    margin: 0px;
+}
+footer>p{
+    margin-bottom: 18px;
+}
+
+
+/*-----------------------------rejoignez-nous  styles---------------------------*/
+.body{
+    padding: 10px;
+  width: 100%;
+  background-image: url(""); 
+  float: left;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:black;
+  
+}
+
+.formulaire-joins{
+ background-color:rgb(244, 238, 238);
+  padding: 20px;
+  flex-wrap: wrap;
+  height: 600px;
+  display: flex;
+}
+.ligne-seperation{
+  width: 100%;
+  height: 1.5px;
+  background-color:rgb(244, 11, 11);
+  flex-wrap: wrap;
+  
+}
+
+.formulaire-joins .content-formulaire .monimage{
+ background-size: cover; 
+ background-position:center;
+ float: left;
+ width: 15%;
+
+
+}
+.information{
+    width: 50%; 
+}
+.content-formulaire{
+  display: flex; 
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+}
+.rejoins-image{
+    width: 30%;
+    margin-left:10px ;
+    padding-left: 20px;
+   color: #000;
+
+
+}
+.rejoins-image h2{
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.rejoins-image i{
+  color: #000;
+   margin: 50px 20px;
+   padding-left: 10px;
+   
+}
+.nosAddresses{
+    width: 80%;
+    height: 400px;
+    background-color:white;
+    border-radius: 2em;
+}
+#id-info{
+  margin-top: 10px;
+  position: relative;
+}
+.content-formulaire .information #id-info input{
+  padding: 10px 3px 10px 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.content-formulaire .information #id-info i{
+  position: absolute;
+  left: 108px;
+  top: 18px;
+  padding: 0px 0px ;
+  color: #000;
+
+  
+}
+
+
+ 
+/*------------------/ Stype pour notre histoire--------------------------------*/
+@import url('https://fonts.googleapis.com/css2? family= Great+Vibes & family= Raleway:ital,wght@1,200 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,700&display=swap');
+body .separtion-histoire{
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    color: #000;
+    font-size: bold;
+}
+body main .histoire-part1
+{
+    display: flex;
+}
+.clsHistoire-partie-gauche {
+    background-image: url("images/hamburger.jpg");
+   padding: 5em;
+    margin: 5em;
+   height: 500px;
+   background-color: #333;
+  border-radius: 1.5em;
+    background-size: cover; 
+    background-position:center;
+    width: 30%; 
+   
+
+}
+.cls-partie-droite{
+    margin-left: 2em;
+    width: 70%;
+    height: 600px;
+}
+.mesTextes{
+    margin: 2em 10em;
+    background-position: center;
+   
+
+}
+.retour-au-menu{
+   border-color: red;
+   background-color: white;
+   border-radius: 1.5em;
+   padding: 1em;
+   font-weight: bold;
+   font-size: 15px;
+}
+.histoire-partie2{
+    display: flex;
+    margin: 2em;
+    border-radius: 1.5em;
+    padding: 10px 100px;
+    margin: 30px 10px;
+   
+}
+.mesAutres-pages{
+    margin: 10px;
+    border-radius: 1.5em;
+    margin-left: 50px;
+    width: 20%;
+    height: 100px;
+    font-size: 20px;
+    background-color:red;
+}
+.histoire-partie2 .mesAutres-pages button{
+    width: 99%;
+    margin-top: 5px;
+    height: 95px;
+    border-radius: 2em;
+    border:0px;
+    border-color: red;
+    font-weight: 1px;
+}
