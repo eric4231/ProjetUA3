@@ -198,13 +198,12 @@ footer>p{
  background-color:rgb(244, 238, 238);
   padding: 20px;
   flex-wrap: wrap;
-  height: 600px;
   display: flex;
 }
 .ligne-seperation{
   width: 100%;
   height: 1.5px;
-  background-color:rgb(244, 11, 11);
+  background-color:#99ccff;
   flex-wrap: wrap;
   
 }
@@ -247,7 +246,6 @@ footer>p{
 }
 .nosAddresses{
     width: 80%;
-    height: 400px;
     background-color:white;
     border-radius: 2em;
 }
@@ -266,8 +264,6 @@ footer>p{
   top: 18px;
   padding: 0px 0px ;
   color: #000;
-
-  
 }
 
 
@@ -276,9 +272,10 @@ footer>p{
 @import url('https://fonts.googleapis.com/css2? family= Great+Vibes & family= Raleway:ital,wght@1,200 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,700&display=swap');
 body .separtion-histoire{
+    display: flex;
     width: 100%;
     height: 1px;
-    background-color: red;
+    background-color:#99ccff;
     color: #000;
     font-size: bold;
 }
@@ -287,22 +284,20 @@ body main .histoire-part1
     display: flex;
 }
 .clsHistoire-partie-gauche {
-    background-image: url("images/hamburger.jpg");
-   padding: 5em;
+    padding: 1em;
     margin: 5em;
-   height: 500px;
    background-color: #333;
-  border-radius: 1.5em;
-    background-size: cover; 
+    border-radius: 1.5em;
     background-position:center;
     width: 30%; 
-   
+    height: 500px;
+    background-image: url("images/hamburger.jpg");
 
+   
 }
 .cls-partie-droite{
     margin-left: 2em;
     width: 70%;
-    height: 600px;
 }
 .mesTextes{
     margin: 2em 10em;
@@ -311,7 +306,7 @@ body main .histoire-part1
 
 }
 .retour-au-menu{
-   border-color: red;
+   border-color: #99ccff;
    background-color: white;
    border-radius: 1.5em;
    padding: 1em;
@@ -331,9 +326,8 @@ body main .histoire-part1
     border-radius: 1.5em;
     margin-left: 50px;
     width: 20%;
-    height: 100px;
     font-size: 20px;
-    background-color:red;
+    background-color:#99ccff;
 }
 .histoire-partie2 .mesAutres-pages button{
     width: 99%;
@@ -341,6 +335,6 @@ body main .histoire-part1
     height: 95px;
     border-radius: 2em;
     border:0px;
-    border-color: red;
+    border-color: #99ccff;
     font-weight: 1px;
 }
