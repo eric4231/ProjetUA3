@@ -104,7 +104,6 @@ main img {
 }
 
 .section_menu{
-    padding: auto;
     font-size: 3em;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -133,8 +132,11 @@ main img {
 
 .img_special{
     max-width: 30%;
-    max-height: auto;
     border: #005a5a solid 2px ;
+}
+
+#img_special{
+    display: none;
 }
 
 .sous_titre_special{
@@ -142,6 +144,10 @@ main img {
     font-size: 1.75rem; 
     margin-top: 1rem; 
     color: black; 
+}
+
+.desc_spl{
+    display: none;
 }
 
 /*inscription*/
@@ -162,6 +168,10 @@ main img {
     margin-top: 1rem; /* Ajoute de l'espace au-dessus du paragraphe */
     color: #005a5a; /* Couleur bleue claire pour le texte */
     width: 20em;
+}
+
+#ins_msg1, #ins_msg2, #ins_msg3, #ins_msg4, #ins_null, #ins_msg5{
+    display: none;
 }
 
 

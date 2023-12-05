@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../javascript/script.js" async></script>
+    <script type="text/javascript" src="../javascript/inscription.js" async></script>
 </head>
 <body>
     <header>
@@ -31,14 +31,19 @@
     </header>
 
     <main>
-        <h1>Inscrivez vous!</h1>
+        <h1 id="ins_titre">Inscrivez vous!</h1>
         <form class="inscription">
+
+            <div>
+                <input id="ins_null" name="ins_null" type="text">
+            </div>
+
             <div>
                 <label class="label_ins" for="email">Email</label>
             </div>
 
             <div>
-                <input class="input_ins" name="email" type="text">
+                <input id="ins_email" class="input_ins" name="email" type="email" pattern="^@">
             </div>
 
             <div>
@@ -46,7 +51,7 @@
             </div>
 
             <div>
-                <input class="input_ins" name="remail" type="text">
+                <input id="ins_remail" class="input_ins" name="remail" type="email">
             </div>
 
             <div>
@@ -54,7 +59,7 @@
             </div>
 
             <div>
-                <input class="input_ins" type="text" name="mdp">
+                <input id="ins_mdp" class="input_ins" name="mdp" type="password">
             </div>
 
             <div>
@@ -62,7 +67,7 @@
             </div>
 
             <div>
-                <input class="input_ins" type="text" name="rmdp">
+                <input id="ins_rmdp" class="input_ins" type="password" name="rmdp">
             </div>
 
             <div>
@@ -70,7 +75,7 @@
             </div>
 
             <div>
-                <input class="input_ins" type="text" name="nom">
+                <input id="ins_nom" class="input_ins" type="text" name="nom">
             </div>
 
             <div>
@@ -78,12 +83,28 @@
             </div>
 
             <div>
-                <input class="input_ins" type="text" name="prenom">
+                <input id="ins_prenom" class="input_ins" type="text" name="prenom">
             </div>
 
-            <button>Enregistrer</button>
+            <div>
+                <label class="label_ins" for="promotion">Voulez-vous recevoir des emails de nos promotions?</label>
+                <input type="checkbox" name="promotion" class="label_ins">
+            </div>
+
+            <button type="button" id="ins_enregistrer">Enregistrer</button>
 
         </form>
+
+        <p id="ins_msg2">Les mots de passes ne sont pas pareilles</p>
+        <p id="ins_msg3">Les emails ne sont pas pareilles</p>
+        <p id="ins_msg4">SVP remplir toutes les informations</p>
+        <p id="ins_msg5">Votre mot de passe est trops court (minimum 8)</p>
+
+        <div id="ins_msg1">
+            <h1>Votre compte a été créé!</h1>
+            <p id="ins_bienvenu">Bienvenu à L'Expérience </p>
+        </div>
+
         <div class="division"></div>
     </main>
 
