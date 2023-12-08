@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - L'Expérience</title>
+    <link rel="icon" type="image/png" href="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../javascript/inscription.js" async></script>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div>
+            <a href="accueil.html"><img src="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png" alt="Logo du restaurant"></a>
+        </div>
+
+        <nav>
+            <div id="hamburger-icon" onclick="toggleMenu()">☰</div>
+            <ul id="navigation-menu">
+            
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="notrehistoire.html">Notre Histoire</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="special.html">Spécials</a></li>
+                <li><a href="Rejoignez-nous.html">Rejoignez Nous!</a></li>
+                <li><a href="inscription.html">Inscrivez Vous!</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 id="ins_titre">Inscrivez vous!</h1>
+        <form class="inscription">
+
+            <div>
+                <input id="ins_null" name="ins_null" type="text">
+            </div>
+
+            <div>
+                <label class="label_ins" for="email">Email</label>
+            </div>
+
+            <div>
+                <input id="ins_email" class="input_ins" name="email" type="email" pattern="^@">
+            </div>
+
+            <div>
+                <label class="label_ins" for="remail">Retappez votre email</label>
+            </div>
+
+            <div>
+                <input id="ins_remail" class="input_ins" name="remail" type="email">
+            </div>
+
+            <div>
+                <label class="label_ins" for="mdp">Mot de passe</label>
+            </div>
+
+            <div>
+                <input id="ins_mdp" class="input_ins" name="mdp" type="password">
+            </div>
+
+            <div>
+                <label class="label_ins" for="rmdp">Retappez votre mot de passe</label>
+            </div>
+
+            <div>
+                <input id="ins_rmdp" class="input_ins" type="password" name="rmdp">
+            </div>
+
+            <div>
+                <label class="label_ins" for="nom">Nom</label>
+            </div>
+
+            <div>
+                <input id="ins_nom" class="input_ins" type="text" name="nom">
+            </div>
+
+            <div>
+                <label class="label_ins" for="prenom">Prenom</label>
+            </div>
+
+            <div>
+                <input id="ins_prenom" class="input_ins" type="text" name="prenom">
+            </div>
+
+            <div>
+                <label class="label_ins" for="promotion">Voulez-vous recevoir des emails de nos promotions?</label>
+                <input type="checkbox" name="promotion" class="label_ins">
+            </div>
+
+            <button type="button" id="ins_enregistrer">Enregistrer</button>
+
+        </form>
+
+        <p id="ins_msg2">Les mots de passes ne sont pas pareilles</p>
+        <p id="ins_msg3">Les emails ne sont pas pareilles</p>
+        <p id="ins_msg4">SVP remplir toutes les informations</p>
+        <p id="ins_msg5">Votre mot de passe est trops court (minimum 8)</p>
+
+        <div id="ins_msg1">
+            <h1>Votre compte a été créé!</h1>
+            <p id="ins_bienvenu">Bienvenu à L'Expérience </p>
+        </div>
+
+        <div class="division"></div>
+    </main>
+
+    <footer>
+        <p>L'Expérience Novembre 2023</p>
+        <p><a href="https://github.com/eric4231/Projet-UA2.git">Lien vers le Git</a></p>
+        
+        &copy; L'Expérience 2023 Luccin Eric mamadou
+    </footer>
+
+</body>
+</html>

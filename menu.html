@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Nom du Restaurant</title>
+    <link rel="icon" type="image/png" href="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
+    <script type="text/javascript" src="../javascript/script.js" async></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
       </style>
@@ -19,27 +21,29 @@
         </div>
         <!-- Navigation -->
         <nav>
-            <ul>
+            <div id="hamburger-icon" onclick="toggleMenu()">☰</div>
+            <ul id="navigation-menu">
+            
                 <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="notrehistoire.html">Notre Histoire</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="#">Spécials</a></li>
-                <li><a href="#">Commander</a></li>
-                <li><a href="#">Restaurant</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="special.html">Spécials</a></li>
+                <li><a href="Rejoignez-nous.html">Rejoignez Nous!</a></li>
+                <li><a href="inscription.html">Inscrivez Vous!</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        
         <table class="table_menu">
             <tr>
-                <th colspan="2">
+                <th colspan="3">
                     <h3 style="font-family: 'Dancing Script';" class="titre_menu">Menu</h3>
                 </th>
             </tr>
             <!-- Entrée -->
             <tr>
+                <td rowspan="9"><img class="img_menu" src="https://lapetitebette.com/wp-content/uploads/2020/01/Ailes-de-poulet-Buffalo-Repas-principaux-676-Modifier-960x1200.jpg" alt=""></td>
                 <td colspan="2" class="section_menu">Entrée</td>
             </tr>
 
@@ -74,6 +78,7 @@
             <!-- SECTION SANDWICH -->
             <tr>
                 <td colspan="2" class="section_menu">Sandwich</td>
+                <td rowspan="9"><img class="img_menu" src="https://www.spendwithpennies.com/wp-content/uploads/2021/05/Steak-Sandwich-SpendWithPennies-12.jpg" alt=""></td>
             </tr>
 
             <tr class="tr_menu">
@@ -109,6 +114,7 @@
             </tr>
             <!-- SECTION VIANDES -->
             <tr>
+                <td rowspan="7"><img class="img_menu" src="https://www.thewickednoodle.com/wp-content/uploads/2021/08/tomahawk-steaks-6-720x1080.jpg.webp" alt=""></td>
                 <td colspan="2" class="section_menu">Viandes</td>
             </tr>
 
@@ -135,10 +141,14 @@
             </tr>
 
         </table>
+        <div class="division"></div>
     </main>
 
     <footer>
-        &copy; nom du restaurant
+        <p>L'Expérience Novembre 2023</p>
+        <p><a href="https://github.com/eric4231/Projet-UA2.git">Lien vers le Git</a></p>
+        
+        &copy; L'Expérience 2023 Luccin Eric mamadou
     </footer>
 
 </body>
