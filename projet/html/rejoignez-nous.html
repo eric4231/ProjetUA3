@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>REGOIGNEZ Le Restaurant LS</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../javascript/script.js" async></script>
-</head>
+    <link rel="stylesheet" href="../css/Style.css">
+    <script type="text/javascript" src="../javascript/script copy.js" async></script>
 <header>
     <!-- Logo -->
     <div>
         <a href="accueil.html"><img src="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png" alt="Logo du restaurant"></a>
     </div>
     <!-- Navigation -->
-    <nav>
+    <nav  action="#" method="post" id="shippingForm" name="form_ship">
         <ul>
             <li><a href="accueil.html">Accueil</a></li>
             <li><a href="notrehistoire.html">Notre Histoire</a></li>
@@ -26,78 +25,102 @@
         </ul>
     </nav>
 </header>
-<body class="body">
-    <form class="formulaire-joins" action="">
-        <h1>REJOIGNEZ-NOUS</h1>
-        <div class="ligne-seperation"></div>
-        <div class="content-formulaire">
-            <div class="information">
-                <div id="id-info" class="clas-nom"> 
-                    <label for="nom">Votre Nom:  </label>
-                    <input id="nom" type="text">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div id="id-info" class="class-email">
-                    <label for="email"> votre email:   </label>
-                    <input id="email" type="email" placeholder="example@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div id="id-info" class="class-telephone">
-                   <label for="tel"> Téléphone :  </label>
-                    <input id="tel" type="tel">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div id="id-info" class="class-texte">
-                    <label for=""> Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                 </div>
-                 <div class="btn-envoyer">
-                    <button>
-                        Envoyer
-                    </button>
-                </div>
-            </div>
-           <!--  partie  droite de ma page -->
-           <div class="monimage">
-                <!-- <img  class="class-image1" src="imageHistoire/image-resto.webp" alt="" srcset=""> -->
-                <p>
-                    « Certains pensent que l'on ne changera pas le monde..
-                    Nous si ! Et avec l'acte le plus quotidien du monde : en mangeant ! Cuisine simple, saine, de saison, approvisionnement 100% biologique et le plus souvent Français. 
-                    Voici les atouts de Yuman pour créer un monde différent, plus humain, plus respectueux, 
-                    plus harmonieux. Derrière chacun de nos plats, il y a des cuisiniers qui taillent, découpent, cuisent, assaisonnent, des fournisseurs et des agriculteurs passionnés, 
-                    impliqués pour préserver la biodiversité. Ainsi, en vous régalant, vous réalisez un acte de bienveillance pour vous, pour les autres
-                    et pour la planète. Rien que cela »
-                </p>
-            </div>
-            <div class="rejoins-image">
-                    <div class="nosAddresses">
-                        <h2> Infos</h2>
-                        <div class="ligne-seperation"></div>
-                        <div><i class="fa-solid fa-phone"></i></i> +432-...-...</div>
-                        <div><i class="fa-solid fa-location-dot">   145 Rue de la ....- Qc</i></div>
-                        <div><i class="fa-solid fa-clock">   24/7</i></div>
-                        
+<body >
+    <main class="corps-de-page">
+        <div class="partie-haute-join">
+            <div class="partie-haute-join-gauche">
+               <div class="gauche-texte">
+                    <div class="ligne-seperation"></div>
+                    <h2>REJOIGNEZ-NOUS</h2>
+                    <p>Pour réserver votre table dans notre restaurant ou dans l'un de nos espaces événementiels, veuillez utiliser le bouton ci-dessous</p>
+                    <div class="gauche-texte-formulaire">
+                    <label id="btnFormulaire" for="nom">
+                        Formulaire
+                    </label>
                     </div>
+                    <div class="ligne-seperation"></div>
+                </div>  
+            </div>
+            <div class="partie-haute-join-droite">
             </div>
             
         </div>
-        
-    </form>
-    <div class="histoire-partie2">
-      
-        <div class="mesAutres-pages"> <form action="accueil.html" target="_blank"><button class="">Acceuil</button></form></div>
-        <div class="mesAutres-pages"><form action="contact.html" target="_blank"><button >Contact</button></form></div>
-        <div class="mesAutres-pages"><form action="notreHistoire.html" target="_blank"><button>Notre Histoire</button></form></div>
-        <div class="mesAutres-pages"> <form action="special.html" target="_blank"><button>Specials</button></form></div>
+        <div class="partie-milieu-join">
+            <div class="partie-milieu-titre">
+                <h3>Cuisine Canadienne à Ottawa</h3>
+                <div class="ligne-seperation-texte"></div>
+            </div>
+            <div class="textes">
+                <div class="partie-milieu-join-texte txt1">"Bienvenue chez LS ! Nous sommes fiers de vous offrir une expérience culinaire exceptionnelle. Notre équipe de chefs talentueux met tout en œuvre pour créer des plats savoureux et créatifs, en utilisant des ingrédients frais et de qualité. Que vous soyez amateurs de viande, de poisson ou de plats végétariens, notre menu varié saura combler toutes les papilles. Venez nous rendre visite et laissez-nous vous faire vivre un moment inoubliable dans une ambiance chaleureuse et conviviale."
+                </div>
+                <div class="partie-milieu-join-texte txt2">"Découvrez le charme deLS , un lieu où la gastronomie rencontre l'élégance. Notre équipe passionnée s'efforce de vous offrir une expérience culinaire raffinée, en mettant l'accent sur les saveurs audacieuses et les présentations artistiques. Nos plats sont préparés avec soin, en utilisant des ingrédients locaux et de saison pour garantir une fraîcheur incomparable. Que ce soit pour un dîner romantique, une réunion d'affaires ou une célébration spéciale, [nom de ton restaurant] est l'endroit idéal pour créer des souvenirs gastronomiques uniques."
+                </div>
+                <div class="partie-milieu-join-texte txt3"> "Bienvenue dans notre oasis culinaire, LS  ! Nous sommes fiers de vous offrir une fusion de saveurs exotiques et de traditions culinaires. Notre menu éclectique vous emmènera dans un voyage gustatif, où chaque bouchée est une explosion de goûts et de textures. Que vous soyez amateurs de plats épicés, de mets exotiques ou de classiques revisités, notre équipe de chefs passionnés saura vous surprendre et vous satisfaire. Venez découvrir une expérience culinaire hors du commun dans une atmosphère accueillante et vibrante."
+                </div>
+            </div>
+        </div>
+        <div class="partie-milieu2-join">
+            <div class="milieu2-formulaire">
+                <form id="id_formulaire"  action="#">
+                    <div class="contenu-formulaire">
+                        <div id="id-info" class="class-nom information"> 
+                            <label for="nom">Votre Nom:  </label>
+                            <input id="nom" type="text">
+                        </div>
+                        <div id="id-info" class="class-mail information">
+                            <label for="email"> votre email:   </label>
+                            <input id="email" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div id="id-info" class="class-tel information">
+                           <label for="tel"> Téléphone :  </label>
+                            <input id="tel" type="tel" placeholder="000-000-0000">
+                        </div>
+                        <small id="id_smallNom"></small>
+                        <div id="id-info" class="class-texte information">
+                            <label for=""></label>
+                            <textarea name="" placeholder="Ajoutz votre message avec le maximum de details possible " id="" cols="30" rows="10"></textarea>
+                         </div>
+                         <div class="btn-envoie ">
+                            <button name="submit" type="button" class="lesButtons1 "  id="id_Envoyer">
+                                Envoyer
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="milieu2-Addresse">
+                <h2 class="addresse-titre">Addresses</h2>
+                <div class="tiret-addresse"></div>
+                <p>20. Rue .. Ottawa,Canada</p>
+                <h2 class="addresse-titre">Contact</h2>
+                <div class="tiret-addresse"></div>
+                <p>LE_resto@gmail.com</p>
+                <p>432-..2..9</p>
+                <div class="tiret-addresse"></div>
+                <h2 class="addresse-titre">Réservation</h2>
+                <p>Nous n’acceptons que les réservations par téléphone, car nous ne consultons pas nos e-mails en temps réel.
+                    Nous nous réjouissons de vous voir dans notre restaurant.</p>
+            </div>
+        </div>
+    </main>
+
+    <h3 class="Decouvrez">
+        Découvrez la cuisine Canadienne
+    </h3>
+    <div class="histoire-partie2 gille">
+       <div  class="mesAutres-pages" href="accueil.html"> <img class="img_rej" src="../images/image-resto.webp" alt="" srcset=""> <form action="accueil.html"    target="_blank"><button >Acceuil</button></form></div>
+        <div class="mesAutres-pages" ><img class="img_rej" src="../images/_virginie_garnier_0.jpg" alt="" srcset=""><form action="inscription.html" target="_blank"><button >Contact</button></form></div>
+        <div class="mesAutres-pages"><img class="img_rej" src="../images/50-504504_m (1).jpg" alt="" srcset=""><form action="Rejoignez-nous.html" target="_blank"><button>Rejoignez-nous</button></form></div>
+        <div class="mesAutres-pages"> <img class="img_rej" src="../images/th.jpeg" alt="" srcset=""><form action="special.html" target="_blank"><button>Specials</button></form></div>
     </div>
     <div class="ligne-seperation"></div>
 
     <footer>
         <p>L'Expérience Novembre 2023</p>
-        <p><a href="https://github.com/eric4231/Projet-UA2.git">Lien vers le Git</a></p>
+        <p><a href="https://github.com/eric4231/ProjetUA3.git">Lien vers le Git</a></p>
         
         &copy; L'Expérience 2023 Luccin Eric mamadou
     </footer>
-  
+    
 </body>
 </html>
