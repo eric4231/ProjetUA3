@@ -7,8 +7,10 @@
     <title>Menu - Nom du Restaurant</title>
     <link rel="icon" type="image/png" href="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="../css/Style.css">
-    <script type="text/javascript" src="../javascript/script.js" async></script>
+    <link rel="stylesheet" href="css/Style.css">
+    <script type="text/javascript" src="js/image.js" async></script>
+    <script type="text/javascript" src="js/menu.js" async></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
       </style>
@@ -21,7 +23,7 @@
         </div>
         <!-- Navigation -->
         <nav>
-            <div id="hamburger-icon" onclick="toggleMenu()">☰</div>
+            <button class="hamburger">☰</button>
             <ul id="navigation-menu">
             
                 <li><a href="accueil.html">Accueil</a></li>
@@ -34,7 +36,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-content">
         <table class="table_menu">
             <tr>
                 <th colspan="3">
@@ -43,7 +45,7 @@
             </tr>
             <!-- Entrée -->
             <tr>
-                <td rowspan="9"><img class="img_menu" src="https://lapetitebette.com/wp-content/uploads/2020/01/Ailes-de-poulet-Buffalo-Repas-principaux-676-Modifier-960x1200.jpg" alt=""></td>
+                <td rowspan="9"><img class="img_menu zoomable-image" src="https://lapetitebette.com/wp-content/uploads/2020/01/Ailes-de-poulet-Buffalo-Repas-principaux-676-Modifier-960x1200.jpg" alt="Zoomable"></td>
                 <td colspan="2" class="section_menu">Entrée</td>
             </tr>
 
@@ -78,7 +80,7 @@
             <!-- SECTION SANDWICH -->
             <tr>
                 <td colspan="2" class="section_menu">Sandwich</td>
-                <td rowspan="9"><img class="img_menu" src="https://www.spendwithpennies.com/wp-content/uploads/2021/05/Steak-Sandwich-SpendWithPennies-12.jpg" alt=""></td>
+                <td rowspan="9"><img class="img_menu zoomable-image" src="https://www.spendwithpennies.com/wp-content/uploads/2021/05/Steak-Sandwich-SpendWithPennies-12.jpg" alt="Zoomable"></td>
             </tr>
 
             <tr class="tr_menu">
@@ -114,7 +116,7 @@
             </tr>
             <!-- SECTION VIANDES -->
             <tr>
-                <td rowspan="7"><img class="img_menu" src="https://www.thewickednoodle.com/wp-content/uploads/2021/08/tomahawk-steaks-6-720x1080.jpg.webp" alt=""></td>
+                <td rowspan="7"><img class="img_menu zoomable-image" src="https://www.thewickednoodle.com/wp-content/uploads/2021/08/tomahawk-steaks-6-720x1080.jpg.webp" alt="Zoomable"></td>
                 <td colspan="2" class="section_menu">Viandes</td>
             </tr>
 
@@ -150,6 +152,7 @@
         
         &copy; L'Expérience 2023 Luccin Eric mamadou
     </footer>
+    
 
 </body>
 </html>

@@ -284,7 +284,7 @@ nav ul#navigation-menu {
 
 
  
-/*------------------/ Stype pour notre histoire--------------------------------*/
+/*------------------/ Style pour notre histoire--------------------------------*/
 @import url('https://fonts.googleapis.com/css2? family= Great+Vibes & family= Raleway:ital,wght@1,200 & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,700&display=swap');
 body .separtion-histoire{
@@ -354,69 +354,64 @@ body main .histoire-part1
     border-color: #99ccff;
     font-weight: 1px;
 }
-/* Style de l'icône du menu hamburger */
-#hamburger-icon {
-    display: none; /* Assurez-vous que cela reste masqué sur les grands écrans */
+/* Style pour le bouton hamburger (affiché uniquement sur les petits écrans) */
+.hamburger {
+    display: none; /* masqué sur les écrans plus grands */
     cursor: pointer;
-    position: fixed; /* Fixe l'icône sur l'écran */
-    top: 0; /* En haut de la page */
-    left: 0; /* À gauche de la page */
-    padding: 1rem; /* Ajoute de l'espace autour de l'icône */
-    z-index: 1000; /* S'assure que l'icône est au-dessus des autres éléments */
+    font-size: 30px; /* Ajustez la taille si nécessaire */
+    color: white; /* ou toute autre couleur */
 }
-/* Pour les téléphone */
-@media screen and (max-width: 600px) {
-    header img {
-        max-width: 50px;
-    }
 
-    /* Affiche l'icône du menu hamburger sur les petits écrans */
-    #hamburger-icon {
+/* Lorsque l'écran est suffisamment petit (e.g., moins de 600px), affichez le bouton hamburger et cachez la navigation standard */
+@media screen and (max-width: 600px) {
+    /* Affiche le bouton hamburger */
+    .hamburger {
         display: block;
     }
 
-    /* Cache la barre de navigation par défaut sur les petits écrans */
-    #navigation-menu {
+    /* Cache la barre de navigation par défaut */
+    nav ul {
         display: none;
-    }
-
-    /* Style du menu déroulant */
-    nav ul#navigation-menu {
-        display: none;
+        flex-direction: column;
         position: fixed;
         top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background-color: #000;
+        transition: left 0.3s;
+        padding-top: 60px; /* Pour ne pas que le menu chevauche le bouton hamburger */
+        z-index: 2;
+    }
+
+    nav ul.active {
         left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #fff; /* Ou toute autre couleur de fond */
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-        margin-top: 2.5rem; /* Espace pour l'icône du menu */
     }
 
-    nav ul#navigation-menu li {
-        padding: 0.5rem 0; /* Espacement entre les éléments de la liste */
-    }
-
-    nav li {
+    /* Style pour les éléments de navigation en mode menu */
+    nav a {
         display: block;
         text-align: left;
-        /* Autres styles */
+        padding: 10px;
     }
 
-    .table_menu, .formulaire-joins, .content-formulaire, .rejoins-image, .information {
-        width: 100%;
+    /* Ajustements pour le contenu principal */
+    .main-content {
+        padding: 10px;
+        transition: margin-left 0.3s; /* Pour animer le contenu lors de l'ouverture du menu */
     }
 
-    main img, .img_menu, .img_special {
-        max-width: 90%;
+    .main-content.active {
+        margin-left: 80%; /* Pour décaler le contenu principal lorsque le menu est ouvert */
     }
 
-    .titre_menu, .section_menu, .option_menu, .description_menu, .prix_menu {
-        font-size: smaller;
+    /* Ajustements pour le logo dans le header */
+    header img {
+        width: 50px; /* Plus petit logo pour les écrans de téléphone */
     }
 }
+
+
 /* Pour les tablettes */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     header img {
@@ -435,4 +430,15 @@ body main .histoire-part1
         font-size: medium;
     }
 }
+
+.zoomable-image {
+    width: 100%; /* Assurez-vous que l'image remplit le conteneur */
+    height: auto; /* Gardez le ratio d'aspect */
+    transition: transform 0.5s ease; /* Transition douce pour l'effet de zoom */
+    cursor: pointer; /* Change l'apparence du curseur pour l'indication interactive */
+}
+/*.zoomable-image:hover {
+    transform: scale(1.2); /* Agrandit l'image de 20% lors du survol 
+    cursor: pointer; /* Change l'apparence du curseur pour l'indication interactive 
+}*/
 
