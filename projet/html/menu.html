@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="https://static.showit.co/800/cKPQwZkpQmeo1WHUOQ-sxQ/55130/lf_logo_monogram_simple.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="../css/Style.css">
-    <script type="text/javascript" src="../javascript/script.js" async></script>
+    <script type="text/javascript" src="../javascript/menu.js" async></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
       </style>
@@ -41,33 +41,33 @@
             </tr>
             <!-- Entrée -->
             <tr>
-                <td rowspan="9"><img class="img_menu" src="https://lapetitebette.com/wp-content/uploads/2020/01/Ailes-de-poulet-Buffalo-Repas-principaux-676-Modifier-960x1200.jpg" alt=""></td>
+                <td rowspan="9"><img class="img_menu" id="img_ent" src="https://lapetitebette.com/wp-content/uploads/2020/01/Ailes-de-poulet-Buffalo-Repas-principaux-676-Modifier-960x1200.jpg" alt=""></td>
                 <td colspan="2" class="section_menu">Entrée</td>
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Ailes de Poulet</td>
+                <td id="menu_ail" class="option_menu">Ailes de Poulet</td>
                 <td class="prix_menu">14</td>
             </tr>
             <tr>
                 <td class="description_menu"><p>6 ailes</p></td>
             </tr>
             <tr class="tr_menu">
-                <td class="option_menu">Calamar</td>
+                <td id="menu_cal" class="option_menu">Calamar</td>
                 <td class="prix_menu">18</td>
             </tr>
             <tr>
                 <td class="description_menu"><p>3oz</p></td>
             </tr>
             <tr class="tr_menu">
-                <td class="option_menu">Oeufs Farcis</td>
+                <td id="menu_oeu" class="option_menu">Oeufs Farcis</td>
                 <td class="prix_menu">12</td>
             </tr>
             <tr>
                 <td class="description_menu"><p>6 moitiers d'oeufs</p></td>
             </tr>
             <tr class="tr_menu">
-                <td class="option_menu">Huîtres</td>
+                <td id="menu_hui" class="option_menu">Huîtres</td>
                 <td class="prix_menu">24</td>
             </tr>
             <tr>
@@ -76,11 +76,11 @@
             <!-- SECTION SANDWICH -->
             <tr>
                 <td colspan="2" class="section_menu">Sandwich</td>
-                <td rowspan="9"><img class="img_menu" src="https://www.spendwithpennies.com/wp-content/uploads/2021/05/Steak-Sandwich-SpendWithPennies-12.jpg" alt=""></td>
+                <td rowspan="9"><img class="img_menu" id="img_san" src="https://www.spendwithpennies.com/wp-content/uploads/2021/05/Steak-Sandwich-SpendWithPennies-12.jpg" alt=""></td>
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Sandwich au Poulet</td>
+                <td id="menu_pou" class="option_menu">Sandwich au Poulet</td>
                 <td class="prix_menu">22</td>
             </tr>
             <tr>
@@ -88,7 +88,7 @@
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Sandwich au Boeuf</td>
+                <td id="menu_boe" class="option_menu">Sandwich au Boeuf</td>
                 <td class="prix_menu">23</td>
             </tr>
             <tr>
@@ -96,7 +96,7 @@
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Sandwich a Dinde</td>
+                <td id="menu_din" class="option_menu">Sandwich a Dinde</td>
                 <td class="prix_menu">22</td>
             </tr>
             <tr>
@@ -104,7 +104,7 @@
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Sandwich Végétarienne</td>
+                <td id="menu_veg" class="option_menu">Sandwich Végétarienne</td>
                 <td class="prix_menu">24</td>
             </tr>
             <tr>
@@ -112,26 +112,26 @@
             </tr>
             <!-- SECTION VIANDES -->
             <tr>
-                <td rowspan="7"><img class="img_menu" src="https://www.thewickednoodle.com/wp-content/uploads/2021/08/tomahawk-steaks-6-720x1080.jpg.webp" alt=""></td>
+                <td rowspan="7"><img class="img_menu" id="img_via" src="https://www.thewickednoodle.com/wp-content/uploads/2021/08/tomahawk-steaks-6-720x1080.jpg.webp" alt=""></td>
                 <td colspan="2" class="section_menu">Viandes</td>
             </tr>
 
             <tr class="tr_menu">
-                <td class="option_menu">Tomahawk</td>
+                <td id="menu_tom" class="option_menu">Tomahawk</td>
                 <td class="prix_menu">66</td>
             </tr>
             <tr>
                 <td class="description_menu"><p>pour 1 à 2 personnes</p></td>
             </tr>
             <tr class="tr_menu">
-                <td class="option_menu">Fillet Mignon</td>
+                <td id="menu_fil" class="option_menu">Fillet Mignon</td>
                 <td class="prix_menu">45</td>
             </tr>
             <tr>
                 <td class="description_menu"><p>15oz</p></td>
             </tr>
             <tr class="tr_menu">
-                <td class="option_menu">Poitrines de Poulet</td>
+                <td  id="menu_poi" class="option_menu">Poitrines de Poulet</td>
                 <td class="prix_menu">34</td>
             </tr>
             <tr>
@@ -144,7 +144,7 @@
 
     <footer>
         <p>L'Expérience Novembre 2023</p>
-        <p><a href="https://github.com/eric4231/Projet-UA2.git">Lien vers le Git</a></p>
+        <p><a href="https://github.com/eric4231/ProjetUA3.git">Lien vers le Git</a></p>
         
         &copy; L'Expérience 2023 Luccin Eric mamadou
     </footer>
